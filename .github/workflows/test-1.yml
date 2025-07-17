@@ -3,7 +3,7 @@ on: push
 jobs:
   my-job:
     runs-on:
-      - codebuild-mygithubaction-${{ github.run_id }}-${{ github.run_attempt }}
+      - codebuild--${{ github.run_id }}-${{ github.run_attempt }}
         instance-size:xlarge
       
     steps:
