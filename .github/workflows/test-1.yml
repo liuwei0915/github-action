@@ -4,7 +4,7 @@ jobs:
   my-job:
     runs-on:
       - codebuild-mygithubaction-${{ github.run_id }}-${{ github.run_attempt }}
-        instance-size: xlarge
+        instance-size: 2xlarge
       
     steps:
       - name: my-step
