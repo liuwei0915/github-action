@@ -2,7 +2,10 @@ name: hello-world
 on: push
 jobs:
   my-job:
-    runs-on: codebuild-mygithubaction-${{ github.run_id }}-${{ github.run_attempt }}
+    runs-on:
+      - codebuild-mygithubaction-${{ github.run_id }}-${{ github.run_attempt }}
+        instance-size: xlarge
+      
     steps:
       - name: my-step
         run: echo "Hello World!!"
