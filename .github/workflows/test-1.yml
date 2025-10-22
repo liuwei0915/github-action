@@ -1,42 +1,42 @@
-# name: hello-world
-# on: push
-# jobs:
-#   my-job:
-#     runs-on:
-#       - codebuild--${{ github.run_id }}-${{ github.run_attempt }}
-#         instance-size:xlarge
-      
-#     steps:
-#       - name: my-step
-#         run: echo "Hello World!! 11"
-name: "Hello World OIDC"
-
-on:
-  workflow_dispatch:
-
-permissions:
-  id-token: write # Required for OIDC
-  contents: read # Required to check out repo
-
+name: hello-world
+on: push
 jobs:
-  hello-world:
-    runs-on: ubuntu-latest
-
+  my-job:
+    runs-on:
+      - codebuild-githubaction1-${{ github.run_id }}-${{ github.run_attempt }}
+        instance-size:xlarge
+      
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4 # https://github.com/actions/checkout
+      - name: my-step
+        run: echo "Hello World!! 11"
+# name: "Hello World OIDC"
 
-      # - name: Configure AWS credentials via OIDC
-      #   uses: aws-actions/configure-aws-credentials@v4 # https://github.com/aws-actions/configure-aws-credentials
-      #   with:
-      #     role-to-assume: arn:aws:iam::111111111111:role/github-actions
-      #     aws-region: us-west-2
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v4.3.1
-        with:
-          aws-region: us-east-1
-          role-to-assume: arn:aws:iam::483464263436:role/githubaction_oidc
-          role-session-name: MySessionName
+# on:
+#   workflow_dispatch:
 
-      - name: Verify AWS access
-        run: aws s3 ls
+# permissions:
+#   id-token: write # Required for OIDC
+#   contents: read # Required to check out repo
+
+# jobs:
+#   hello-world:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v4 # https://github.com/actions/checkout
+
+#       # - name: Configure AWS credentials via OIDC
+#       #   uses: aws-actions/configure-aws-credentials@v4 # https://github.com/aws-actions/configure-aws-credentials
+#       #   with:
+#       #     role-to-assume: arn:aws:iam::111111111111:role/github-actions
+#       #     aws-region: us-west-2
+#       - name: Configure AWS Credentials
+#         uses: aws-actions/configure-aws-credentials@v4.3.1
+#         with:
+#           aws-region: us-east-1
+#           role-to-assume: arn:aws:iam::483464263436:role/githubaction_oidc
+#           role-session-name: MySessionName
+
+#       - name: Verify AWS access
+#         run: aws s3 ls
