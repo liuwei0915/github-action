@@ -1,14 +1,12 @@
-name: hello-world
-on: push
+name: Hello World
+on: [push]
 jobs:
-  my-job:
+  Hello-World-Job:
     runs-on:
       - codebuild-githubaction1-${{ github.run_id }}-${{ github.run_attempt }}
-        instance-size:xlarge
-      
     steps:
-      - name: my-step
-        run: echo "Hello World!! 11"
+      - run: echo "Hello World!"
+      
 # name: "Hello World OIDC"
 
 # on:
