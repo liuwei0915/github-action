@@ -19,6 +19,7 @@ phases:
     commands:
       - echo Build completed on11 `date`
       - ls -al
+      - pwd
       - cd _diag
       - ls -al
       - echo "Insert the breakpoint command into your command list"
