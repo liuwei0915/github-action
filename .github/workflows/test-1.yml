@@ -13,6 +13,8 @@ jobs:
          echo $pwd
          cd /codebuild/output/src*/src/actions-runner
          ls -la
+         cd _diag
+         ls -la
       
 # name: "Hello World OIDC"
 
