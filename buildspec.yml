@@ -4,6 +4,10 @@ phases:
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
+      - echo "==========Fetching Runner Logs==========="
+      - cat $CODEBUILD_SRC_DIR/actions-runner/_diag/Runner*.log
+      - echo "==========Fetching Worker Logs==========="
+      - cat $CODEBUILD_SRC_DIR/actions-runner/_diag/Worker*.log
   build:
     commands:
       - echo Build started on `date`
