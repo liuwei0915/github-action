@@ -6,6 +6,10 @@ jobs:
       - codebuild-githubrunner-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - run: echo "Hello World!111 again in Oct 23 -2"
+      - name: Check runner logs
+        run: |
+          cat $RUNNER_DIAG/*.log       
+          cat $RUNNER_ROOT/_diag/*.log 
       
 # name: "Hello World OIDC"
 
