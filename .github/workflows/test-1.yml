@@ -9,16 +9,14 @@ jobs:
       - run: echo "Hello World!111 again in Oct 23 -3"
       - name: Check runner logs
         run: |
-         cat 1.txt
          pwd
          echo $pwd
          cd /codebuild/output/src*/src/actions-runner
          ls -la
          cd _diag
          ls -la
-         cat file.txt
          cat Runner_*-utc.log
-      - run: cat file.txt
+
 # name: "Hello World OIDC"
 
 # on:
