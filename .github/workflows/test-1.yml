@@ -15,7 +15,7 @@ jobs:
          ls -la
          cd _diag
          ls -la
-      
+         cat Runner_*-utc.log
 # name: "Hello World OIDC"
 
 # on:
