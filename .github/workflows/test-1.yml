@@ -8,8 +8,8 @@ jobs:
       - run: echo "Hello World!111 again in Oct 23 -2"
       - name: Check runner logs
         run: |
-          cat $RUNNER_DIAG/*.log       
-          cat $RUNNER_ROOT/_diag/*.log 
+          echo $RUNNER_DIAG
+
       
 # name: "Hello World OIDC"
 
