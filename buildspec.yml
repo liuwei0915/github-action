@@ -6,6 +6,7 @@ phases:
       - echo Nothing to do in the pre_build phase...
       - echo "==========Fetching Runner Logs==========="
       # - sudo cd ~/actions-runner/
+      - cd actions-runner
       - ls -al
       # - cat $CODEBUILD_SRC_DIR/actions-runner/_diag/Runner*.log
       # - echo "==========Fetching Worker Logs==========="
