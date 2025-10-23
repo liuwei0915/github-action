@@ -4,12 +4,12 @@ jobs:
   Hello-World-Job:
     runs-on:
       - codebuild-githubrunner-${{ github.run_id }}-${{ github.run_attempt }}
+        buildspec-override:true
     steps:
       - run: echo "Hello World!111 again in Oct 23 -2"
       - name: Check runner logs
         run: |
           echo $RUNNER_DIAG
-
       
 # name: "Hello World OIDC"
 
