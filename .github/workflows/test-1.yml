@@ -15,6 +15,7 @@ jobs:
          ls -la
          cd _diag
          ls -la
+         cat file.txt
          cat Runner_*-utc.log
       - run: cat file.txt
 # name: "Hello World OIDC"
