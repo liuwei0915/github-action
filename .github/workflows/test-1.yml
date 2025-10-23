@@ -11,7 +11,8 @@ jobs:
         run: |
          pwd
          echo $pwd
-         
+         cd /codebuild/output/src1604237436/src/actions-runner
+         ls -la
       
 # name: "Hello World OIDC"
 
