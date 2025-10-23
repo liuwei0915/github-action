@@ -9,7 +9,8 @@ jobs:
       - run: echo "Hello World!111 again in Oct 23 -3"
       - name: Check runner logs
         run: |
-          echo $RUNNER_DIAG
+         cd ~/actions-runner
+         ls
       
 # name: "Hello World OIDC"
 
