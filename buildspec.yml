@@ -19,4 +19,6 @@ phases:
     commands:
       - echo Build completed on11 `date`
       - ls 
-      
+      - echo "Insert the breakpoint command into your command list"
+      - codebuild-breakpoint
+
