@@ -11,6 +11,7 @@ jobs:
          echo hello111
          echo $pwd
          docker --version
+         hostname -i
          sudo yum install -y postgresql15
          export PGPASSWORD='.tqJ_Rf[?MXLGtyNURC8|sD<_dSd'
          psql -h database-1.cnn3mmzdidcf.us-west-1.rds.amazonaws.com -U wei -d postgres -c "CREATE DATABASE mydb2;"
