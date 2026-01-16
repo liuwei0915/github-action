@@ -10,12 +10,12 @@ jobs:
         run: |
          pwd
          echo $pwd
-         cd /codebuild/output/src*/src/actions-runner
-         echo wei11
-         cd _diag
-         ls -la
-         cat Runner_*-utc.log
          docker --version
+# cd /codebuild/output/src*/src/actions-runner
+        # echo wei11
+         # cd _diag
+         # ls -la
+         # cat Runner_*-utc.log
 # name: "Hello World OIDC"
 
 # on:
