@@ -11,6 +11,7 @@ jobs:
          echo hello11
          echo $pwd
          docker --version
+         sudo yum install -y postgresql15
 # cd /codebuild/output/src*/src/actions-runner
         # echo wei11
          # cd _diag
