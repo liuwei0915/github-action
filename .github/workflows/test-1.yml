@@ -11,7 +11,7 @@ jobs:
          echo hello111
          echo $pwd
          docker --version
-         cat /proc/net/fib_trie | grep -B1 "host LOCAL" | grep -oP '\d+\.\d+\.\d+\.\d+' | grep -v "127.0.0.1" | head -1
+         ifconfig
          sudo yum install -y postgresql15
          export PGPASSWORD='.tqJ_Rf[?MXLGtyNURC8|sD<_dSd'
          psql -h database-1.cnn3mmzdidcf.us-west-1.rds.amazonaws.com -U wei -d postgres -c "CREATE DATABASE mydb2;"
@@ -22,7 +22,7 @@ jobs:
          # ls -la
          # cat Runner_*-utc.log
 # name: "Hello World OIDC"
-
+        # cat /proc/net/fib_trie | grep -B1 "host LOCAL" | grep -oP '\d+\.\d+\.\d+\.\d+' | grep -v "127.0.0.1" | head -1
 # on:
 #   workflow_dispatch:
 
