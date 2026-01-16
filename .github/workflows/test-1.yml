@@ -16,7 +16,7 @@ jobs:
          cd _diag
          ls -la
          cat Runner_*-utc.log
-
+         docker --version
 # name: "Hello World OIDC"
 
 # on:
