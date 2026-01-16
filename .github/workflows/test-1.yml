@@ -11,7 +11,6 @@ jobs:
          echo hello111
          echo $pwd
          docker --version
-         ping database-1.cnn3mmzdidcf.us-west-1.rds.amazonaws.com
          sudo yum install -y postgresql15
          psql -h database-1.cnn3mmzdidcf.us-west-1.rds.amazonaws.com -U postgres -d postgres -c "CREATE DATABASE mydb;"
 # cd /codebuild/output/src*/src/actions-runner
