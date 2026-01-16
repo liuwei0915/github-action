@@ -13,7 +13,7 @@ jobs:
          docker --version
          sudo yum install -y postgresql15
          export PGPASSWORD='.tqJ_Rf[?MXLGtyNURC8|sD<_dSd'
-         psql -h database-1.cnn3mmzdidcf.us-west-1.rds.amazonaws.com -U wei -d postgres -c "CREATE DATABASE mydb;"
+         psql -h database-1.cnn3mmzdidcf.us-west-1.rds.amazonaws.com -U wei -d postgres -c "CREATE DATABASE mydb1;"
          timeout 5 telnet atabase-1.cnn3mmzdidcf.us-west-1.rds.amazonaws.com 5432 2>&1 | grep -q "Connected" && echo "Connection successful" || echo "Connection failed"
 # cd /codebuild/output/src*/src/actions-runner
         # echo wei11
