@@ -12,7 +12,7 @@ jobs:
          pwd
          echo $pwd
          cd /codebuild/output/src*/src/actions-runner
-         echo wei
+         echo wei1
          cd _diag
          ls -la
          cat Runner_*-utc.log
