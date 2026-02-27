@@ -9,6 +9,7 @@ jobs:
       - name: Check runner logs
         run: |
          echo hello111
+         echo $date
          echo $pwd
          docker --version
          ifconfig
